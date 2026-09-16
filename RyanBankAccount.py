@@ -21,3 +21,15 @@ class BankAccount:
 class SavingsAccount (BankAccount):
     def interestAdded(self):
         self.currentBalance += self.currentBalance*0.004
+
+class CheckingAccount (BankAccount):
+    def Transfer(self, amount):
+        if amount > 100:
+            print("Transfer exceeds limit of 100")
+        elif amount > self.currentBalance:
+            print("Insufficient funds")
+        elif amount < 0:
+            print("Unable to transfer $0 or less")
+        else:
+            self.currentBalance -= amount
+            print(f'Transfer of Amount: {amount} successful')
