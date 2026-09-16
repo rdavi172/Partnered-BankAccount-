@@ -1,9 +1,11 @@
 class BankAccount:
     Title = "Bank of America"
-    def __init__(self, name, currentBalance, MinimumBalance):
+    def __init__(self, name, currentBalance, minimumBalance, accountNumber):
         self.name = name
         self.currentBalance = currentBalance
-        self.minimumBalance = MinimumBalance
+        self.minimumBalance = minimumBalance
+        self._accountNumber = accountNumber
+        self.__routingNumber = 801472823
 
     def deposit(self, amount):
         self.currentBalance += amount
