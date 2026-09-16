@@ -33,7 +33,7 @@ class CheckingAccount (BankAccount):
             print("Transfer exceeds limit of 100")
         elif amount > self.currentBalance:
             print("Insufficient funds")
-        elif amount < 0:
+        elif amount <= 0:
             print("Unable to transfer $0 or less")
         else:
             self.currentBalance -= amount
