@@ -11,8 +11,11 @@ class BankAccount:
         self.currentBalance += amount
 
     def withdraw(self, amount):
-        if amount > self.minimumBalance:
+        if self.minimumBalance > self.currentBalance - amount:
             print("Insufficient funds")
+            return
+        elif amount < 0:
+            print("Unable to withdraw $0 or less")
             return
         self.currentBalance -= amount
 
