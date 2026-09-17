@@ -1,5 +1,5 @@
 # Author: Adrian Jaimes
-# Module: bank_account.py
+# Module: bank_account.py - Base BankAccount class
 
 class BankAccount:
     bank_title = "SECU Bank"
