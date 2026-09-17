@@ -1,5 +1,5 @@
 # Author: Adrian Jaimes
-# Module: checking_account.py
+# Module:checking_account.py
 
 from bank_account import BankAccount
 
